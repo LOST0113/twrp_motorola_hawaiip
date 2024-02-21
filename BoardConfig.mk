@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/motorola/hawaiipl
+DEVICE_PATH := device/motorola/hawaiip
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -58,8 +58,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CONFIG := hawaiipl_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/hawaiipl
+TARGET_KERNEL_CONFIG := hawaiip_defconfig
+TARGET_KERNEL_SOURCE := kernel/motorola/hawaiip
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -104,9 +104,6 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
-
-
-
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
@@ -129,4 +126,3 @@ TW_NO_FASTBOOT_BOOT := true
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-

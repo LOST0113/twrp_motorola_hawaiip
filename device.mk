@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/motorola/hawaiipl
+LOCAL_PATH := device/motorola/hawaiip
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -20,8 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-mtkimpl.recovery \
-    android.hardware.boot@1.0-mtkimpl
+    android.hardware.boot@1.0-mtkimp.recovery \
+    android.hardware.boot@1.0-mtkimp
 
 PRODUCT_PACKAGES += \
     bootctrl.mt6765
