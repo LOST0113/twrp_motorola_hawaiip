@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from hawaiipl device
+# Inherit from hawaiip device
 $(call inherit-product, device/motorola/hawaiip/device.mk)
 
 PRODUCT_DEVICE := hawaiip

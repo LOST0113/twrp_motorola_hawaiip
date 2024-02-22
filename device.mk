@@ -21,12 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-mtkimp.recovery \
-    android.hardware.boot@1.0-mtkimp \
-    bootctrl.mt6765 \
-    bootctrl.mt6765.recovery
+    android.hardware.boot@1.0-mtkimp
 
 PRODUCT_PACKAGES += \
-    bootctrl
+    bootctrl.mt6765
 
 # PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 #     bootctrl.mt6765 \
