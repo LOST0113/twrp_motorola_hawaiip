@@ -117,19 +117,22 @@ PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
-TW_SCREEN_BLANK_ON_BOOT := true
+# TW_EXTRA_LANGUAGES := true
+TW_DEFAULT_LANGUAGE := en_US
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
-TW_INCLUDE_REPACKTOOLS := true
 TW_EXCLUDE_APEX := true
+TW_EXCLUDE_TWRPAPP := true
+TARGET_USES_MKE2FS := true
+
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := true
-TARGET_USES_MKE2FS := true
-TW_EXCLUDE_TWRPAPP := true
+
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
+
+# TW_INCLUDE_REPACKTOOLS := true
 
 # This device does not support fastboot boot, do *NOT* remove!
 TW_NO_FASTBOOT_BOOT := true
