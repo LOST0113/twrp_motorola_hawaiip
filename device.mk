@@ -54,9 +54,9 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # fastbootd
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
+# PRODUCT_PACKAGES += \
+#     android.hardware.fastboot@1.0-impl-mock \
+#     fastbootd
 
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
