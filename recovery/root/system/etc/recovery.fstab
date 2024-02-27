@@ -10,7 +10,7 @@ system                                                 /system                  
 vendor                                                 /vendor                  ext4    ro,barrier=1                                         wait,slotselect,avb,logical,first_stage_mount
 product                                                /product                 ext4    ro,barrier=1                                         wait,slotselect,avb,logical,first_stage_mount
 /dev/block/platform/bootdevice/by-name/metadata        /metadata                ext4    noatime,nosuid,nodev,discard                         wait,formattable,first_stage_mount
-/dev/block/platform/bootdevice/by-name/userdata        /data                    f2fs    rw,discard,nosuid,nodev,noatime,nodiratime,quota,nobarrier,reserve_root=32768,resgid=1065   latemount,wait,check,formattable,fileencryption=ice:aes-256-cts,quota,reservedsize=128M,checkpoint=fs
+/dev/block/platform/bootdevice/by-name/userdata        /data                    f2fs    discard,nosuid,nodev,noatime,nodiratime,quota,fsync_mode=nobarrier,reserve_root=32768,resgid=1065,latemount,wait,check,formattable,resize,fileencryption=ice:aes-256-cts,reservedsize=128M,checkpoint=fs
 ## /devices/platform/soc/7864900.sdhci/mmc_host*       auto                     auto    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/*/xhci-hcd.*.auto/usb*                        auto                     auto    defaults                                             voldmanaged=usb:auto
 /dev/block/platform/bootdevice/by-name/modem           /vendor/firmware_mnt     ext4    ro,nosuid,nodev,context=u:object_r:firmware_file:s0  wait,slotselect
