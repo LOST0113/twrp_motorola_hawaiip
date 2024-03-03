@@ -69,8 +69,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 #     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
 #     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
-# PRODUCT_PACKAGES += \
-#     twrpfbe
+# Crypto FBE
+PRODUCT_PACKAGES += \
+    twrpfbe
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.dm_default_key.options_format.version=2
