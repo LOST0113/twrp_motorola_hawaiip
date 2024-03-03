@@ -24,8 +24,13 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-mtkimpl \
     android.hardware.boot@1.2-mtkimpl.recovery
     
+PRODUCT_PACKAGES_DEBUG += \
+    bootctrl \
+    update_engine_client
+
 PRODUCT_PACKAGES += \
-    bootctrl.mt6765
+    bootctrl.mt6765 \
+    bootctrl.mt6765.recovery
 
 # PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 #     bootctrl.mt6765 \
